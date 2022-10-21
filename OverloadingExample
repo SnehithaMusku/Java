@@ -1,0 +1,18 @@
+public class OverloadingExample {
+	int sum = 0;
+
+	public void sumOfNumbers(int number1, int number2) {
+		sum = number1 + number2;
+		System.out.println("Sum of two numbers is:" + sum);
+	}
+
+	public void sumOfNumbers(int number1, int number2, int number3) {
+		sum = number1 + number2 + number3;
+		System.out.println("Sum of three numbers is:" + sum);
+	}
+
+	public static void main(String[] args) {
+		OverloadingExample obj = new OverloadingExample();
+		obj.sumOfNumbers(10, 20, 33);
+	}
+}
