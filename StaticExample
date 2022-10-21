@@ -1,0 +1,20 @@
+class StaticExample{               //static variable with static method/
+static int Age;
+static String Name;
+
+static void display()
+{
+System.out.println("Age is:" +Age);
+System.out.println("Name is:" +Name);
+}
+
+public static void main(String[] args)
+{
+
+Age=25;
+Name= "Sneha";
+
+display();
+}
+}
+
