@@ -1,0 +1,10 @@
+class NumberFormatExceptionExample{
+
+public static void main(String[] args)
+{
+String S="Sneha";
+int num=Integer.parseInt(S);    //converting string to integer//
+System.out.println(num);
+}
+}
+                                          //By using try and catch block we can avoid number format exception//
