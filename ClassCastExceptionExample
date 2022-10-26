@@ -1,0 +1,28 @@
+class X{
+int i=5;
+}
+class Y extends X{
+int j=10;
+}
+class Z extends Y{
+int k=15;
+}
+
+class ClassCastExceptionExample{
+public static void main(String[] args)
+{
+
+
+//X x=new X();  throws an exception
+//X x=new Y();
+//Z z=(Z)x;   throws exception
+//Z z=(Z)y;//
+
+
+Z z=new Z();  
+Y y=(Y) z;
+X x=(X) y;
+
+System.out.println(x.i);
+}
+}
